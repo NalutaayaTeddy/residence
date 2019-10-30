@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="halls.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>umu </title>
+</head>
+<body>
+    <div class="main  col-12  no-gutters d-flex" style="padding: 0%;">
+        <div class="innerleft col-3">
+                <h3 class="navheading">Campus Acommodation</h3>
+
+                    
+                            <button class="navitem" onclick="openContent(event, 'home')" id="defaultOpen">Home</button>
+                            <button class="navitem" onclick="openContent(event, 'about')">About us</button>
+                            <button class="navitem" onclick="openContent(event, 'faq')">FAQ</button>
+                            <button class="navitem" onclick="openContent(event, 'halls')">Halls</button>
+                            <button class="navitem" onclick="openContent(event, 'Rates')">Rates</button>
+                            <button class="navitem" onclick="openContent(event, 'standards')">Community standards</button>
+        </div>                 
+    
+            
+       <div class="innerright col-9 " style="padding-left: 15px;">
+        <div id="home" class="tabContent">
+            <h2>Home</h2>
+            <p>The university offers accommodation to its students</p>
+            <p>It has a number of halls and they are divided into those of male sex and female sex</p>
+            <p>It offers security to the students that stay on-campus</p>
+            <p>The university has a well organised accomodation committe, and in each hall there is a hall councellor </p>
+            <p>All the halls are governed by the warden who is in charge of all the halls and maintains them</p>
+        </div>
+        <div id="about" class="tabContent">
+            <h2>About us</h2>
+            <p>We provide full on campus accomodation for students </p>
+            <p>Contact us: </p>
+            <br>
+            <p>tel. 070000001</p>
+            <br>
+            <p>email: info@umu.ac.ug</p>
+            <h3>Location</h3>
+            <p>The university is located along Masaka-Kampala road,</p>
+            <p>its found in mpigi district in Nkozi village</p>
+        </div>
+            
+            <div id="faq" class="tabContent">
+                <h2>FAQ</h2>
+                <h3>Why choose on-campus accomodation?</h3>
+                <p>it is the best option for student bacause of the proximity to lecture halls</p>
+                <h3></h3>
+            </div>
+            <div id="Rates" class="tabContent">
+                <h2>Rates</h2>
+                <h3>double rooms</h3>
+                <table>
+                    <tr>
+                            <th>hall</th>
+                            <th>fee(shs)</th>
+                    </tr>
+                    <tr>
+                            <td>mukasa hall</td>
+                            <td>450000</td>
+                    </tr>
+                    <tr>
+                            <td>campbell hall</td>
+                            <td>450000</td>
+                    </tr>
+                    <tr>
+                            <td>Martyrs hall</td>
+                            <td>450000</td>
+                    </tr>
+                    <tr>
+                            <td>halflet hall</td>
+                            <td>4500000</td>
+                    </tr>
+                    <tr>
+                            <td>carabine hall</td>
+                            <td>450000</td>
+                    </tr>
+                    <tr>
+                            <td>onyango hall</td>
+                            <td>450000</td>
+                    </tr>
+                    <tr>
+                            <td>Canaan hostel</td>
+                            <td>450000</td>
+                    </tr>
+                </table>
+                <h3>single rooms</h3>
+                <table>
+                    <tr>
+                        <th>Halls</th>
+                        <th>fee(shs)</th>
+                    </tr>
+                   <tr>
+                       <td>campbell hall</td>
+                       <td>9000000</td>
+                   </tr>
+                   <tr>
+                       <td>Canaan hostel</td>
+                       <td>1000000</td>
+                   </tr>
+                   <tr>
+                       <td>Martyrs hall</td>
+                       <td>9000000</td>
+                   </tr>
+                </table>
+            </div>
+            <div id="halls" class="tabContent">
+                <h2>Halls</h2>
+                <ul>
+                   <li>Mukasa hall</li>
+                   <li>Cambell hall</li>
+                   <li>Martyrs hall</li>
+                   <li>Haflet hall</li>
+                   <li>Carabine hall</li>
+                   <li>Onyango hall</li>
+                   <li>Canaan hostel</li>
+                </ul>
+            </div>
+            <div id="standards" class="tabContent">
+                <h2>Community standards</h2>
+            </div>
+    </div>
+
+       </div>
+    <script>
+    function openContent(event, menuName){
+        var i, tabContent, navitem;
+
+        tabContent = document.getElementsByClassName("tabContent");
+        for(i = 0; i< tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+
+        navitem = document.getElementsByClassName("navitem");
+        for(i =0; i<navitem.length; i++){
+            navitem[i].className = navitem[i].className.replace(" active", "");
+        }
+
+        document.getElementById(menuName).style.display = "block";
+        event.currentTarget.className += " active";
+        
+
+    }
+    document.getElementById("defaultOpen").click();
+
+    </script>
+</body>
+</html>
