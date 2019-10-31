@@ -1,7 +1,12 @@
 html, body{
     height: 100%;
     margin: 0;
+    bottom: 0;
     
+}
+body > .main{
+  height: auto;
+  min-height: 100%;
 }
 .main{
     float: left;
@@ -47,7 +52,8 @@ button {
   }
 
   .innerleft{
-      height: 100%;
+    height: auto;
+      min-height: 100%;
       padding: 0;
       background-color: #DA2722;
   }
