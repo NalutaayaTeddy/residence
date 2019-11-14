@@ -1,4 +1,4 @@
-html, body{
+  html, body{
     height: 100%;
     margin: 0;
     bottom: 0;
@@ -71,13 +71,14 @@ button {
     border: 1px solid black; 
     border-collapse: collapse;
   }
-  .tabContent{
-     /* color: blueviolet;*/
-  }
+  
   h3,h2{
     color: #DA2722;
   }
   li{
     list-style: none;
   }
-  
+  .pics{
+    height: 250px;
+    width: 320px;
+  }
